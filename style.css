@@ -1,0 +1,74 @@
+:root {
+  --cream: #fff8e1;
+  --paper: #ffffff;
+  --teal: #1f8f7f;
+  --ink: #26332f;
+  --soft: #5b6b66;
+  --orange: #f08a24;
+  --line: #eadfbd;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--ink);
+  font-family: "Trebuchet MS", "Segoe UI", Verdana, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 24px 20px 8px;
+}
+
+header img { width: 64px; height: 64px; border-radius: 50%; }
+
+header a.name {
+  font-size: 26px;
+  font-weight: bold;
+  color: var(--teal);
+  text-decoration: none;
+}
+
+nav { margin-left: auto; display: flex; gap: 18px; font-size: 16px; }
+nav a { color: var(--soft); text-decoration: none; }
+nav a:hover, nav a.here { color: var(--teal); text-decoration: underline; }
+
+main {
+  max-width: 720px;
+  margin: 16px auto 40px;
+  padding: 28px 28px 32px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+}
+
+h1 { margin: 0 0 6px; font-size: 32px; color: var(--teal); }
+h2 { margin: 30px 0 6px; font-size: 21px; color: var(--ink); }
+p, li { margin: 8px 0; }
+ul { padding-left: 22px; }
+.updated { color: var(--soft); font-size: 15px; margin-top: 0; }
+.hero { width: 180px; height: 180px; border-radius: 50%; float: right; margin: 0 0 12px 20px; }
+a { color: var(--teal); }
+
+footer {
+  max-width: 720px;
+  margin: 0 auto 40px;
+  padding: 0 20px;
+  color: var(--soft);
+  font-size: 15px;
+}
+
+@media (max-width: 560px) {
+  header { flex-wrap: wrap; }
+  nav { margin-left: 0; width: 100%; }
+  main { margin: 12px; padding: 20px; }
+  .hero { float: none; display: block; margin: 0 auto 12px; }
+}
